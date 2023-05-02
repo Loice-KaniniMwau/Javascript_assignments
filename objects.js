@@ -21,6 +21,35 @@ for(let i=0; i< people.length;i++){
 return empty
 }
 console.log(ages())
+//approach two
+function olderthan_18(){
+  let over_18=people.filter(item=>{
+    return item.age >=18
+  })
+  let p=over_18.map(function(person){
+    return person.name
+  })
+  return p
+
+}
+console.log(olderthan_18())
+//approach three
+function above_18(){
+  let under_18=[]
+  let over_18=[]
+  for(let x=0;x<people.length;x++){
+    if(people[x].age <18){
+       under_18.push(people[x].name)
+    }
+    else{
+     over_18.push(people[x].name)
+    }
+    
+  }
+  return over_18
+ 
+}
+console.log(above_18())
 //Write a function that takes an array of objects, 
 //where each object represents a product with a name, price, and category property//
  //The function should return an object that groups the products by their categories,

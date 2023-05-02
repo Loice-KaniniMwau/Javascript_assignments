@@ -52,13 +52,13 @@ function calculate_total(){
     
 }
  calculate_total()
-// let counter=0;
-// function calculate_total(){
-// let sum=stock_quantity.reduce((prev,current)=>prev+current,
-//  counter);
-// console.log(sum)
-// }
-// calculate_total()
+let counte=0;
+function calculate_total(){
+let sum=stock_quantity.reduce((prev,current)=>prev+current,
+ counte);
+console.log(sum)
+}
+calculate_total()
  
 // //Write a function to find the item with the lowest stock quantity.
 function lowest_quantity(){
