@@ -1,4 +1,5 @@
-//
+
+
 class Car{
     constructor(make,model,year,isAvailable){
       
@@ -29,6 +30,8 @@ class Rental{
             *60*60*24)
             console.log(hireduration)
     }
+    //this.rentalenddate.gettime()-this.rentalstartdate/
+    //math.ceil
 }
 let carhire=new Rental("subaru","loice mwau",new Date('11/12/2020'),new Date('1/4/2023'))
 console.log(carhire)
@@ -61,12 +64,14 @@ this.questions.push(question)
 }
 nextQuestion(){
     this.currentQuestionIndex++
+    return this.currentQuestionIndex
 }
 submitAnswer(userAnswer){
     let currentQuestion=this.questions[this.currentQuestionIndex]
     if(currentQuestion.checkAnswer(userAnswer)){
         this.score++
     }
+    return currentQuestion
 }
 }
 let quiz1=new Quiz()
